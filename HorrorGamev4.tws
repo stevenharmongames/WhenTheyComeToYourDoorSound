@@ -1,11 +1,11 @@
 (dp0
 S'buildDestination'
 p1
-VD:\u005cOneDrive\u005cUSC Homework\u005cJunior Year\u005cSpring\u005cCTIN 444\u005chorror game project\u005cindex.html
+VD:\u005cOneDrive\u005cUSC Homework\u005cJunior Year\u005cSpring\u005cCTIN 444\u005cwhentheycometoyourdoor\u005cindex.html
 p2
 sS'saveDestination'
 p3
-VD:\u005cOneDrive\u005cUSC Homework\u005cJunior Year\u005cSpring\u005cCTIN 444\u005chorror game project\u005cHorrorGamev4.tws
+S'D:\\OneDrive\\USC Homework\\Junior Year\\Spring\\CTIN 444\\whentheycometoyourdoor\\HorrorGamev4.tws'
 p4
 sS'metadata'
 p5
@@ -45,7 +45,7 @@ p22
 (dp24
 S'text'
 p25
-V<center>This game uses audio.\u000aPlease use headphones.       \u000a[[start|title]]              \u000a</center>
+V<center>This game uses audio.\u000aPlease use headphones.\u000a      \u000a[[start|title]]\u000a</center>
 p26
 sS'title'
 p27
@@ -57,13 +57,13 @@ ctime
 struct_time
 p30
 ((I2020
-I3
-I11
-I6
-I49
-I26
+I5
+I13
+I1
+I58
+I57
 I2
-I71
+I134
 I1
 tp31
 (dp32
@@ -190,7 +190,7 @@ tp70
 Rp71
 sbsa(dp72
 g18
-I01
+I00
 sg19
 (lp73
 F10.0
@@ -368,7 +368,7 @@ Tiddler
 p124
 (dp125
 g25
-V<center>\u000a[img[when they come]]\u000a![[begin]]\u000aby [[Steven Harmon|http://www.stevenharmongames.com/]] & [[Nhi L Trinh|https://www.instagram.com/trinh_le_nhi/?hl=en&fbclid=IwAR14xmqmk3fdMDykktYuJIUGTC75GFBJb5SahgRhSMUnt8v84WQrZWGQ3No]]\u000a</center>\u000a<<loopsound "showerloop.mp3" >>\u000a<<loopsound "roomtone00.mp3" >>\u000a<<set $continueshower to false>>
+V<center>\u000a[img[when they come]]\u000a![[begin]]\u000aby [[Steven Harmon|http://www.stevenharmongames.com/]] & [[Nhi L Trinh|https://www.instagram.com/trinh_le_nhi/?hl=en&fbclid=IwAR14xmqmk3fdMDykktYuJIUGTC75GFBJb5SahgRhSMUnt8v84WQrZWGQ3No]]\u000a</center>\u000a<<set $continueshower to false>>
 p126
 sg27
 Vtitle
@@ -379,8 +379,8 @@ g30
 I5
 I13
 I1
-I33
-I7
+I59
+I10
 I2
 I134
 I1
@@ -407,7 +407,7 @@ tp135
 Rp136
 sbsa(dp137
 g18
-I00
+I01
 sg19
 (lp138
 F150.0
@@ -418,7 +418,7 @@ Tiddler
 p139
 (dp140
 g25
-V[[Reach]] for a towel on the rack\u000a\u000a[[Continue showering|continue showering][$continueshower to true]]
+V[[Reach]] for a towel on the rack\u000a\u000a[[Continue showering|continue showering][$continueshower to true]]\u000a\u000a<<loopsound "showerloop.mp3" >>\u000a<<loopsound "roomtone00.mp3" >>
 p141
 sg27
 Vbegin
@@ -426,13 +426,13 @@ p142
 sg29
 g30
 ((I2020
-I4
-I14
-I22
-I29
-I42
+I5
+I13
 I1
-I105
+I59
+I18
+I2
+I134
 I1
 tp143
 (dp144
