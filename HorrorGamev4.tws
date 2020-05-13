@@ -4232,7 +4232,7 @@ Tiddler
 p1291
 (dp1292
 g25
-V"He's on his way to work, you've just missed him", you say.\u000a\u000aThey mention his car parked on the street outside and that they've been outside for over an hour before coming in. They see through your lie and ask again for your cooperation, this time they mean it.\u000a\u000a[[Open door slightly with the lock still in place|open door]].\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+V"He's on his way to work, you've just missed him", you say.\u000a\u000aThey mention his car parked on the street outside and that they've been outside for over an hour before coming in. They see through your lie and ask again for your cooperation, this time they mean it.\u000a\u000a[[Open door slightly with the lock still in place|open door]].\u000a<<display "Timer Addon">>\u000a<<set_timer_param "donothing1">>\u000a<<pause_timer>>
 p1293
 sg27
 VTell them he's on his way to work
@@ -4240,13 +4240,13 @@ p1294
 sg29
 g30
 ((I2020
-I4
-I27
-I19
-I24
 I5
-I0
-I118
+I13
+I3
+I34
+I58
+I2
+I134
 I1
 tp1295
 (dp1296
@@ -4282,7 +4282,7 @@ Tiddler
 p1306
 (dp1307
 g25
-V"He's in the shower right now, could you come back later?" you say.\u000a\u000aThey say it's urgent and that they can wait to talk to him in your living room.\u000a\u000a[[Open door slightly with the lock still in place|open door]].\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+V"He's in the shower right now, could you come back later?" you say.\u000a\u000aThey say it's urgent and that they can wait to talk to him in your living room.\u000a\u000a[[Open door slightly with the lock still in place|open door]].\u000a\u000a<<display "Timer Addon">>\u000a<<set_timer_param "donothing1">>\u000a<<pause_timer>>
 p1308
 sg27
 VTell them he's currently in the shower
@@ -4292,9 +4292,9 @@ g30
 ((I2020
 I5
 I13
-I2
-I39
-I42
+I3
+I35
+I0
 I2
 I134
 I1
@@ -4332,7 +4332,7 @@ Tiddler
 p1321
 (dp1322
 g25
-VThe officers are wearing civilian clothes but still have a utility belt with pouches, handcuffs, gun, and taser. There are two of them sturdly built and they look impatient.\u000a<<set $checkedPeep to true>>\u000a[[You think about what to tell them|deep knock]].\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+VThe officers are wearing civilian clothes but still have a utility belt with pouches, handcuffs, gun, and taser. There are two of them sturdly built and they look impatient.\u000a<<set $checkedPeep to true>>\u000a[[You think about what to tell them|deep knock]].\u000a<<display "Timer Addon">>\u000a<<set_timer_param "donothing1">>\u000a<<pause_timer>>
 p1323
 sg27
 Vpeep hole
@@ -4340,13 +4340,13 @@ p1324
 sg29
 g30
 ((I2020
-I4
-I27
-I19
-I24
-I37
-I0
-I118
+I5
+I13
+I3
+I34
+I40
+I2
+I134
 I1
 tp1325
 (dp1326
@@ -4382,7 +4382,7 @@ Tiddler
 p1336
 (dp1337
 g25
-V<<display "Timer Addon">>\u000a<<stop_timer>>\u000a<<display "Timer Addon">>\u000a<<start_timer 21>>\u000a<<set_timer_mode "display">>\u000a<<set_timer_param "escortedawaywithparents">>\u000a\u000a<<playsound "opendoor.mp3" >>
+V<<display "Timer Addon">>\u000a<<set_timer_param "donothing1">>\u000a<<pause_timer>>\u000a<<display "Timer Addon">>\u000a<<start_timer 21>>\u000a<<set_timer_mode "display">>\u000a<<set_timer_param "escortedawaywithparents">>\u000a\u000a<<playsound "opendoor.mp3" >>
 p1338
 sg27
 Vopen door
@@ -4392,8 +4392,8 @@ g30
 ((I2020
 I5
 I13
-I2
-I39
+I3
+I34
 I54
 I2
 I134
@@ -4432,7 +4432,7 @@ Tiddler
 p1351
 (dp1352
 g25
-VThey knock again, but this time harder. Your Mom looks at you and then the [[door]].\u000a<<playsound "doorknockhard.mp3" >>\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+VThey knock again, but this time harder. Your Mom looks at you and then the [[door]].\u000a<<playsound "doorknockhard.mp3" >>\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>
 p1353
 sg27
 Vdonothing1
@@ -4442,9 +4442,9 @@ g30
 ((I2020
 I5
 I13
-I2
-I38
-I32
+I3
+I36
+I44
 I2
 I134
 I1
@@ -4534,7 +4534,7 @@ Tiddler
 p1382
 (dp1383
 g25
-V<<display "Timer Addon">>\u000a<<stop_timer>>\u000a<<if $checkID is false && $checkWarrant is false && $setCam is false>> You remember a news story you heard on the radio on the school bus about covert morning ICE raids, but you don't know if this is actual police or not and you don't want to get arrested for not complying and give them an excuse to use force. <bold> You </bold> <<endif>>\u000a\u000a<div class="options"><<if $checkID is false>> [[ask for their ID|ID][$checkID to true]] <<endif>> <<if $checkWarrant is false>> [[ask for their warrant|Warrant][$checkWarrant to true]] <<endif>> <<if $setCam is false>> [[set up a livestream|SetCam][$setCam to true]] <<endif>></div>\u000a\u000a<<if $alreadyRead is false>>\u000a	<<display "Timer Addon">>\u000a	<<start_timer 30>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a<<if $alreadyRead is true>>\u000a	<<display "Timer Addon">>\u000a	<<start_timer 7>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a\u000a<<if $checkID is true && $checkWarrant is true && $setCam is true>>\u000aYour Mom's face turns pale with a sudden realization as your Dad enters the living room having just finished his shower.\u000a"What's going on? Why haven't you answered the door? That knocking was driving me nuts!"\u000a\u000a[[You try to explain|open door]].\u000a	<<display "Timer Addon">>\u000a	<<start_timer 1>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a\u000a<<playsound "putyourselfbetweenknock.mp3" >>
+V<<display "Timer Addon">>\u000a<<stop_timer>>\u000a<<pause_timer>>\u000a<<if $checkID is false && $checkWarrant is false && $setCam is false>> You remember a news story you heard on the radio on the school bus about covert morning ICE raids, but you don't know if this is actual police or not and you don't want to get arrested for not complying and give them an excuse to use force. <bold> You </bold> <<endif>>\u000a\u000a<div class="options"><<if $checkID is false>> [[ask for their ID|ID][$checkID to true]] <<endif>> <<if $checkWarrant is false>> [[ask for their warrant|Warrant][$checkWarrant to true]] <<endif>> <<if $setCam is false>> [[set up a livestream|SetCam][$setCam to true]] <<endif>></div>\u000a\u000a<<if $alreadyRead is false>>\u000a	<<display "Timer Addon">>\u000a	<<start_timer 30>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a<<if $alreadyRead is true>>\u000a	<<display "Timer Addon">>\u000a	<<start_timer 7>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a\u000a<<if $checkID is true && $checkWarrant is true && $setCam is true>>\u000aYour Mom's face turns pale with a sudden realization as your Dad enters the living room having just finished his shower.\u000a"What's going on? Why haven't you answered the door? That knocking was driving me nuts!"\u000a\u000a[[You try to explain|open door]].\u000a	<<display "Timer Addon">>\u000a	<<start_timer 1>>\u000a	<<set_timer_mode "display">>\u000a	<<set_timer_param "open door">>\u000a<<endif>>\u000a\u000a<<playsound "putyourselfbetweenknock.mp3" >>
 p1384
 sg27
 Vput yourself between her and the door
@@ -4545,8 +4545,8 @@ g30
 I5
 I13
 I3
-I5
-I0
+I36
+I27
 I2
 I134
 I1
@@ -4634,7 +4634,7 @@ Tiddler
 p1412
 (dp1413
 g25
-VYou stand paralyzed. You don't know what to do. You remember a news story you heard on the radio on the school bus about covert morning ICE raids, but you don't know if this is actual police or not and you don't want to get arrested for not complying and give them an excuse to use force. By the time you wrap your head around the whole ordeal Mom has her hands on the doorknob and [[pulls the door open|open door]] ever so slightly to speak with the officers.\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+VYou stand paralyzed. You don't know what to do. You remember a news story you heard on the radio on the school bus about covert morning ICE raids, but you don't know if this is actual police or not and you don't want to get arrested for not complying and give them an excuse to use force. By the time you wrap your head around the whole ordeal Mom has her hands on the doorknob and [[pulls the door open|open door]] ever so slightly to speak with the officers.\u000a\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>
 p1414
 sg27
 Vdonothing2
@@ -4644,9 +4644,9 @@ g30
 ((I2020
 I5
 I13
-I2
-I40
-I18
+I3
+I36
+I54
 I2
 I134
 I1
@@ -5886,7 +5886,7 @@ Tiddler
 p1788
 (dp1789
 g25
-VAlong with your parents, you're escorted into a van with other families. [[//Hopefully they don't separate us.//|fin]] \u000a\u000a<<if $evidence is true>>\u000aAnd the evidence you collected proved useful in the court proceedings that followed.\u000a\u000a<<if $pictureID is true>>The IDs were fake. The ICE officers were found impersonating local police.<<endif>>\u000a\u000a<<if $pictureWarrant is true>>The warrant was fake and was not signed off by a judge.<<endif>>\u000a\u000a<<if $setCam is true>> The video evidence from the livestream was sufficient proof of unlawful entry without a warrant or permission. <<endif>>\u000a<<endif>>\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>\u000a<<fadeoutsound "roomtone01.mp3" >>\u000a<<fadeinsound "roomtone03.mp3" >>
+VAlong with your parents, you're escorted into a van with other families. [[//Hopefully they don't separate us.//|fin]] \u000a\u000a<<if $evidence is true>>\u000aAnd the evidence you collected proved useful in the court proceedings that followed.\u000a\u000a<<if $pictureID is true>>The IDs were fake. The ICE officers were found impersonating local police.<<endif>>\u000a\u000a<<if $pictureWarrant is true>>The warrant was fake and was not signed off by a judge.<<endif>>\u000a\u000a<<if $setCam is true>> The video evidence from the livestream was sufficient proof of unlawful entry without a warrant or permission. <<endif>>\u000a<<endif>>\u000a\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>\u000a<<fadeoutsound "roomtone01.mp3" >>\u000a<<fadeinsound "roomtone03.mp3" >>
 p1790
 sg27
 Vescortedawaywithparents
@@ -5896,9 +5896,9 @@ g30
 ((I2020
 I5
 I13
-I2
-I40
-I27
+I3
+I37
+I0
 I2
 I134
 I1
@@ -5936,7 +5936,7 @@ Tiddler
 p1803
 (dp1804
 g25
-V"Can you hold up your ID to the hole please?"\u000a\u000aYou know you've asked for the right credentials, but you don't know what you're supposed to be looking for.\u000a\u000aTheir badges look legitimate, but [[how could you possibly know?|put yourself between her and the door]]\u000a\u000aJust to make sure, you [[take pictures of the IDs|put yourself between her and the door][$picturesID to true; $evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkID to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+V"Can you hold up your ID to the hole please?"\u000a\u000aYou know you've asked for the right credentials, but you don't know what you're supposed to be looking for.\u000a\u000aTheir badges look legitimate, but [[how could you possibly know?|put yourself between her and the door]]\u000a\u000aJust to make sure, you [[take pictures of the IDs|put yourself between her and the door][$picturesID to true; $evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkID to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>
 p1805
 sg27
 VID
@@ -5947,8 +5947,8 @@ g30
 I5
 I13
 I3
-I4
-I40
+I37
+I7
 I2
 I134
 I1
@@ -5986,7 +5986,7 @@ Tiddler
 p1818
 (dp1819
 g25
-V"Do you have a warrant?"\u000a\u000a[[Open door with lock on to get warrant|open door]].\u000a\u000a[[Ask them to slide the warrant under the door|under door]]\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+V"Do you have a warrant?"\u000a\u000a[[Open door with lock on to get warrant|open door]].\u000a\u000a[[Ask them to slide the warrant under the door|under door]]\u000a\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>
 p1820
 sg27
 VWarrant
@@ -5994,13 +5994,13 @@ p1821
 sg29
 g30
 ((I2020
-I4
-I27
-I19
-I24
-I55
-I0
-I118
+I5
+I13
+I3
+I37
+I14
+I2
+I134
 I1
 tp1822
 (dp1823
@@ -6025,7 +6025,7 @@ tp1829
 Rp1830
 sbsa(dp1831
 g18
-I00
+I01
 sg19
 (lp1832
 F3510.0
@@ -6036,7 +6036,7 @@ Tiddler
 p1833
 (dp1834
 g25
-VDespite all the things you can do, you have a hunch to film everything for the record. You set up a livestream and manage to hide your phone in a covert location where no one would look.\u000a\u000a[[They knock again|put yourself between her and the door]]\u000a\u000a<<set $alreadyRead to true; $setCam to true; $evidence to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+VDespite all the things you can do, you have a hunch to film everything for the record. You set up a livestream and manage to hide your phone in a covert location where no one would look.\u000a\u000a[[They knock again|put yourself between her and the door]]\u000a\u000a<<set $alreadyRead to true; $setCam to true; $evidence to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<pause_timer>>\u000a<<stop_timer>>
 p1835
 sg27
 VSetCam
@@ -6044,13 +6044,13 @@ p1836
 sg29
 g30
 ((I2020
-I4
-I27
-I19
-I24
-I57
-I0
-I118
+I5
+I13
+I3
+I37
+I21
+I2
+I134
 I1
 tp1837
 (dp1838
