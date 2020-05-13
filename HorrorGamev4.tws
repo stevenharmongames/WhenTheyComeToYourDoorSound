@@ -5,7 +5,7 @@ VD:\u005cOneDrive\u005cUSC Homework\u005cJunior Year\u005cSpring\u005cCTIN 444\u
 p2
 sS'saveDestination'
 p3
-S'D:\\OneDrive\\USC Homework\\Junior Year\\Spring\\CTIN 444\\whentheycometoyourdoor\\HorrorGamev4.tws'
+VD:\u005cOneDrive\u005cUSC Homework\u005cJunior Year\u005cSpring\u005cCTIN 444\u005cwhentheycometoyourdoor\u005cHorrorGamev4.tws
 p4
 sS'metadata'
 p5
@@ -4544,9 +4544,9 @@ g30
 ((I2020
 I5
 I13
-I1
 I3
-I9
+I5
+I0
 I2
 I134
 I1
@@ -4884,7 +4884,7 @@ Tiddler
 p1487
 (dp1488
 g25
-V<center>[[//I'm on your own now.//|fin]]</center>\u000a\u000a<<fadeoutsound "roomtone02.mp3" >>
+V<center>[[//I'm on my own now.//|fin]]</center>\u000a\u000a<<fadeoutsound "roomtone02.mp3" >>
 p1489
 sg27
 VWhat is happening
@@ -4894,9 +4894,9 @@ g30
 ((I2020
 I5
 I13
-I1
-I18
-I32
+I2
+I52
+I6
 I2
 I134
 I1
@@ -5875,7 +5875,7 @@ tp1784
 Rp1785
 sbsa(dp1786
 g18
-I01
+I00
 sg19
 (lp1787
 F3370.0
@@ -5928,7 +5928,7 @@ g18
 I00
 sg19
 (lp1802
-F3230.0
+F3650.0
 aF850.0
 asg21
 (itiddlywiki
@@ -5936,7 +5936,7 @@ Tiddler
 p1803
 (dp1804
 g25
-V"Can you hold up your ID to the hole please?"\u000a\u000aYou know you've asked for the right credentials, but you don't know what you're supposed to be looking for.\u000a\u000aTheir badges look legitimate, but [[how could you possibly know?|put yourself between her and the door]]\u000a\u000aJust to make sure, you [[take pictures of the IDs|put yourself between her and the door][set $picturesID to true; $evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkID to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
+V"Can you hold up your ID to the hole please?"\u000a\u000aYou know you've asked for the right credentials, but you don't know what you're supposed to be looking for.\u000a\u000aTheir badges look legitimate, but [[how could you possibly know?|put yourself between her and the door]]\u000a\u000aJust to make sure, you [[take pictures of the IDs|put yourself between her and the door][$picturesID to true; $evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkID to true>>\u000a\u000a<<display "Timer Addon">>\u000a<<stop_timer>>
 p1805
 sg27
 VID
@@ -5944,13 +5944,13 @@ p1806
 sg29
 g30
 ((I2020
-I4
-I27
-I19
-I25
 I5
-I0
-I118
+I13
+I3
+I4
+I40
+I2
+I134
 I1
 tp1807
 (dp1808
@@ -6086,7 +6086,7 @@ Tiddler
 p1848
 (dp1849
 g25
-VYou look at the document, but aren't sure of what you are looking at. Although you have helped your parents with other legal documents before, you do not know if this is how a warrant should look like. //Is this the right format? What are these names? How can I verify this?//\u000a\u000aAt least I got a good look at them, they look legit I guess? [[You return the documents|put yourself between her and the door]].\u000a\u000aBut just to make sure, you [[take pictures of the IDs|put yourself between her and the door][set $picturesWarrant to true; $evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkWarrant to true>>
+VYou look at the document, but aren't sure of what you are looking at. Although you have helped your parents with other legal documents before, you do not know if this is how a warrant should look like. //Is this the right format? What are these names? How can I verify this?//\u000a\u000aAt least I got a good look at them, they look legit I guess? [[You return the documents|put yourself between her and the door]].\u000a\u000aBut just to make sure, you [[take pictures of the IDs|put yourself between her and the door][$picturesWarrant to true;$evidence to true]].\u000a\u000a<<set $alreadyRead to true>>\u000a<<set $checkWarrant to true>>
 p1850
 sg27
 Vunder door
@@ -6094,13 +6094,13 @@ p1851
 sg29
 g30
 ((I2020
+I5
+I13
+I3
 I4
-I26
-I20
-I35
-I32
-I6
-I117
+I23
+I2
+I134
 I1
 tp1852
 (dp1853
